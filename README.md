@@ -5,9 +5,9 @@
 String[] title = new String[]{"Startseite", "Angelplätze", "Wetter", "Fischsteckbrief", "Fangbuch", "Einstellungen", "Über", "Forum"};
 
 int[] icon = new int[]{R.drawable.ic_home_selector,
-        R.drawable.ic_explore_selector, R.drawable.ic_cloud_selector,
-        R.drawable.ic_today_selector, R.drawable.ic_assignment_selector,
-        R.drawable.ic_settings_selector, R.drawable.ic_info_outline_selector, R.drawable.ic_public_selector};
+                R.drawable.ic_explore_selector, R.drawable.ic_cloud_selector,
+                R.drawable.ic_today_selector, R.drawable.ic_assignment_selector,
+                R.drawable.ic_settings_selector, R.drawable.ic_info_outline_selector, R.drawable.ic_public_selector};
 
 MenuListAdapter mMenuAdapter = new MenuListAdapter(MainActivity.this, title, icon);  
 
