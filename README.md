@@ -2,7 +2,7 @@
 
 //MainActivity.java
 
-String[] title = new String[]{"Startseite", "Angelplätze", "Wetter", "Fischsteckbrief", "Fangbuch", "Einstellungen", "Über", "Forum"};
+String[] title = new String[]{"Test1", "Test2", ....};
 
 int[] icon = new int[]{R.drawable.ic_home_selector,
                 R.drawable.ic_explore_selector, R.drawable.ic_cloud_selector,
@@ -90,6 +90,36 @@ public class MenuListAdapter extends BaseAdapter {
     }
 
 }
+
+//item_row.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/rowIcon"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_home_selector"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:textSize="16sp"
+        android:textColor="@color/selector_text_color"
+        android:text="News"
+        android:id="@+id/rowText" />
+
+</LinearLayout>
 
 //Bei Fragen einfach loslegen ^^
 
